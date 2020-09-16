@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Functions in JavaScript</title>
+    </head>
+    <body>
+        <script>
+        //defining function
+        function sayHello(){
+            document.write("Hello World");
+        }
+        //function with parameters
+        function displaySum(num1, num2){
+            var sum = num1 + num2;
+            document.write("<br>"+sum);
+        }
+        function printName(first, last){
+            document.write("<br>Full Name is "+first+" "+last);
+        }
+        function printNameWithDefaultValues(name="Unknown"){
+            document.write("<br>Name is "+name);
+        }
+        sayHello(); //calling the function
+        displaySum(43,53); //calling the parameterized function
+        printName("Chetan","Talwar"); //calling function with exact values
+        printName("Chetan");//calling fucntion with limited values
+        printNameWithDefaultValues("Chetan Talwar"); //calling default values function with some value
+        printNameWithDefaultValues();//calling default values function with no values
+
+        //function with return value
+        function getSum(num1, num2){
+            var total = num1 + num2;
+            return total;
+        }
+        //function returning array
+        function divison(dividend,divisor){
+            var quo = dividend/divisor;
+            var rem = dividend%divisor;
+            var arr = [dividend,divisor,quo,rem];
+            return arr;
+        }
+        document.write("<br>Sum is "+getSum(43,53)); //calling function with return statement
+        var arr = divison(35,7);
+        document.write("<br>"+arr[0]+" "+arr[1]+" "+arr[2]+" "+arr[3]+" ");//calling function returning array
+        
+        //function Expression
+        var getProduct = function(num1,num2){
+            var product = num1 * num2;
+            return product;
+        }
+
+        document.write("<br>"+getProduct(43,10));
+
+        declaration();
+        function declaration(){
+            document.write("<br>Function Declaration");
+        }
+
+        expression();
+        var expression = function(){
+            document.write("<br>Function Expression");
+        }
+        </script>
+    </body>
+</html>
