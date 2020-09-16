@@ -1,0 +1,35 @@
+body{
+    background-color: hsl(68, 24%, 76%);
+}
+.box{
+    width: 500px;
+    height: auto;
+    background-color: rgba(20,50,54,0.8);
+    border: 2px solid rgb(211, 201, 148);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    color: white;
+    box-shadow: 5px 5px 10px hsl(350, 60%, 62%), 10px 20px 3px hsl(195, 79%, 13%);
+}
+.transform{
+    -webkit-transform: rotate3d(0,1,0, 45deg);
+    transform: rotate3d(0,1,0,45deg);
+}
+.transform2d{
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+}
+button{
+    color: white;
+    border: 4px dotted rgb(211, 201, 148);
+    padding: 10px 20px;
+    background: hsl(350, 60%, 62%);
+    -webkit-transition: background 2s;
+    transition: background 2s;
+}
+button:hover{
+    background: hsl(195, 79%, 13%);
+}
