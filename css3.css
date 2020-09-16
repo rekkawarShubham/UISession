@@ -1,0 +1,24 @@
+body{
+    background-color: hsl(68, 24%, 76%);
+}
+.box{
+    width: 500px;
+    height: 300px;
+    background-color: rgba(20,50,54,0.8);
+    border: 2px solid rgb(211, 201, 148);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 40px;
+    color: white;
+    box-shadow: 5px 5px 10px hsl(350, 60%, 62%), 10px 20px 3px hsl(195, 79%, 13%);
+}
+img{
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    transform: rotate(40deg);
+    /*-webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    transform: scale(2);*/
+}
