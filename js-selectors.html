@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>External JS</title>
+    </head>
+    <body>
+        <h1>Learning UI </h1>
+        <h1>Current Topic - Javascript</h1>
+        <p class="js-head">Adding JavaScript to Your Web Pages</p>
+        <div id="desc">There are typically three ways to add JavaScript to a web page:
+          Embedding the JavaScript code between a pair of script tag.<br>
+         <br>Creating an external JavaScript file with the .js extension and then load it within the page through the src attribute of the script tag.
+        <br>Placing the JavaScript code directly inside an HTML tag using the special tag attributes such as onclick, onmouseover, onkeypress, onload, etc
+        </div>
+        <p class="js-head">What You Can Do with JavaScript</p>
+        <script>
+            //Getting element by id
+            var match = document.getElementById("desc");
+            match.style.color = "blue";
+            // Get array of elements by class name
+            var match2 = document.getElementsByClassName("js-head");
+            //document.write(match2.length);
+            
+            //Direct Operation on return of class name object will not work
+            //match2.style.color = "green";
+            
+            //direct operation on one of the element of the returned array
+            match2[0].style.color = "green";
+
+            //looping through the array to perfrom some sort of operation
+            //for(var v in match2){
+            //    match2[v].style.color="green";
+            //}
+
+            //get array of elements by Tag name
+            var bytag = document.getElementsByTagName("h1");
+            document.write(bytag.length);
+           
+            //bytag[0].style.color = "red";
+
+            for(var v in bytag){
+                bytag[v].style.color="red";
+            }
+        </script>
+    </body>
+</html>

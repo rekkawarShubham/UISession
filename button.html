@@ -1,0 +1,34 @@
+<html>
+<head></head>
+<body>
+    <form>
+        <label>City</label>
+        <input type="text" name="city" list="cities"><br>
+        <datalist id="cities">
+            <option value="Pune"></option>
+            <option value="Mumbai"></option>
+            <option value="Chennai"></option>
+        </datalist>
+        <hr>
+        <fieldset>
+            <legend>Qualification</legend>
+            <input type="radio" name="qualification" value="Graduation" id="Graduation">
+            <label for="Graduation">Graduation</label>
+            <input type="radio" name="qualification" value="Post Graduation" id="Post">
+            <label for="Post">Post Graduation</label>
+        </fieldset>
+        <hr>
+        <label>Selecting Interests</label>
+        <select>
+            <optgroup label="Playing with Data">
+                <option value="Data Science">Data Science</option>
+                <option value="Data Analytics">Data Analytics</option>
+            </optgroup>
+            <optgroup label="AI & ML">
+                <option value="Machine Learning">Machine Learning</option>
+                <option value="Artificial Intelligence">Artifial  Intelligence</option>
+            </optgroup>
+        </select>
+        <button type="submit" >Submit</button>
+    </form>
+</body>
